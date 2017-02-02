@@ -11,7 +11,7 @@ angular.module('angular-here-maps')
     return {
       require: '^map',
       scope: {
-      	coordinates: '=',
+        coordinates: '=',
         icon: '=',
         zIndex: '='
       },
@@ -28,7 +28,7 @@ angular.module('angular-here-maps')
           }
         };
 
-      	scope.$watch('coordinates', function() {
+        scope.$watch('coordinates', function() {
           if (coordinates) {
             mapController.removeMarker(group);
           }
